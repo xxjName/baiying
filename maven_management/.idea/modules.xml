@@ -1,24 +1,11 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../baiying_tongcai_eureka/eureka.iml" filepath="$PROJECT_DIR$/../baiying_tongcai_eureka/eureka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/maven_management.iml" filepath="$PROJECT_DIR$/.idea/maven_management.iml" />
       <module fileurl="file://$PROJECT_DIR$/../baiying_tongcai_user/user.iml" filepath="$PROJECT_DIR$/../baiying_tongcai_user/user.iml" />
       <module fileurl="file://$PROJECT_DIR$/../baiying_tongcai_zuul/zuul.iml" filepath="$PROJECT_DIR$/../baiying_tongcai_zuul/zuul.iml" />
     </modules>
   </component>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/../baiying_tongcai_eureka/eureka.iml" filepath="$PROJECT_DIR$/../baiying_tongcai_eureka/eureka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../baiying_tongcai_user/user.iml" filepath="$PROJECT_DIR$/../baiying_tongcai_user/user.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../baiying_tongcai_zuul/zuul.iml" filepath="$PROJECT_DIR$/../baiying_tongcai_zuul/zuul.iml" />
-    </modules>
-  </component>
->>>>>>> dd
 </project>
