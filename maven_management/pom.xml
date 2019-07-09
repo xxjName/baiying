@@ -12,6 +12,7 @@
          <module>../baiying_tongcai_user</module>
          <module>../baiying_tongcai_zuul</module>
      </modules>
+<<<<<<< HEAD
 <dependencies>
     <!-- 引用Mybatis 和 Mysql驱动开始  -->
     <dependency>
@@ -61,4 +62,7 @@
             </configurationFile>
         </configuration>
     </plugin>
+=======
+
+>>>>>>> dd
 </project>
