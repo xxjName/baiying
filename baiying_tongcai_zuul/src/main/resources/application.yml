@@ -6,7 +6,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8080/eureka/
+      defaultZone: http://localhost:8081/eureka/
 zuul:
   routes:
     #��ʶ���������֣���������Լ����壬һ�㷽��͹淶�������Ǹ��Լ����������һ��
