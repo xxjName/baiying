@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/baiying_tongcai_eureka/baiying_tongcai_eureka.iml" filepath="$PROJECT_DIR$/baiying_tongcai_eureka/baiying_tongcai_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baiying_tongcai_user/baiying_tongcai_user.iml" filepath="$PROJECT_DIR$/baiying_tongcai_user/baiying_tongcai_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baiying_tongcai_zuul/baiying_tongcai_zuul.iml" filepath="$PROJECT_DIR$/baiying_tongcai_zuul/baiying_tongcai_zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven_management/maven_management.iml" filepath="$PROJECT_DIR$/maven_management/maven_management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/work.iml" filepath="$PROJECT_DIR$/.idea/work.iml" />
+    </modules>
+  </component>
+</project>

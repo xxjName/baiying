@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="baiying_tongcai_zuul" />
+        <module name="maven_management" />
+        <module name="baiying_tongcai_user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="baiying_tongcai_eureka" target="1.8" />
+      <module name="baiying_tongcai_user" target="1.8" />
+      <module name="baiying_tongcai_zuul" target="1.8" />
+      <module name="maven_management" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="baiying_tongcai_user" options="-parameters" />
+      <module name="baiying_tongcai_zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

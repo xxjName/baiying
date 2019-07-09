@@ -1,0 +1,28 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: client-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+zuul:
+  routes:
+    #��ʶ���������֣���������Լ����壬һ�㷽��͹淶�������Ǹ��Լ����������һ��
+    #hello-ses:
+      #����ӳ���·����ͨ����·���Ϳ��Դ��ⲿ������ķ����ˣ�Ŀ����Ϊ�˲���¶�������IP����������·���ˣ�����ѡһ�����õĳ�����
+      #����zuul���Զ�����hystrix��ribbon�ģ��������򵥻�
+      #path: /hello-service/**
+      #����һ��Ҫ����Eurekaע�����ĵķ�������ƣ���������������serviceId��Ϊ��eureka����ˣ��������ʹ����zuul,��ô�ͱ���д�Լ�������IP��
+      #��url:http://localhost:8080/  �����Ĳ��þ���д��IP�ˣ���һ��IP���ˣ���߿����ԣ�����ע�����׶������ò�������
+      #serviceId: springcloud-config-server
+      #ֻҪ������/btc/��ͷ�Ķ��Ŀ¼������·�ɵ�������Ϊcloud-provider�ķ�����.
+    baiying_tongcai_user: /btc/**
+    client-zuul: /zuul/**
+cloud:
+  config:
+    discovery:
+      enabled: true
+      service-id: springcloud-config-server
+    profile: dev
