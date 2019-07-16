@@ -13,3 +13,6 @@ cloud:
       enabled: true
       service-id: springcloud-config-server
     profile: dev
+feign:
+  hystrix:
+    enabled: true

@@ -11,6 +11,47 @@
          <module>../baiying_tongcai_eureka</module>
          <module>../baiying_tongcai_user</module>
          <module>../baiying_tongcai_zuul</module>
+         <module>../baiying_tongcai_system</module>
+         <module>../baiying_tongcai_baiscdata</module>
      </modules>
+ 
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath/>
+    </parent>
+    <packaging>pom</packaging>
+
+    <properties>
+        <shiro.version>1.4.0</shiro.version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+        <dependency>
+            <groupId>com.baiscdata</groupId>
+            <artifactId>baiscdata</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
         </project>

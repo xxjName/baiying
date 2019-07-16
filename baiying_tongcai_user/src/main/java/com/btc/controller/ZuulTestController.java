@@ -1,8 +1,15 @@
 package com.btc.controller;
 
+import com.btc.feigin.ProductFeigin;
+import com.btc.main.Product;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * TODO: 网关测试类
@@ -11,11 +18,15 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class ZuulTestController {
+ @Autowired
+ ProductFeigin productFeigin;
 
     @RequestMapping("getZuulShow")
     @ResponseBody
-    public String getZuulShow(){
-        return "成功搭建完成!";
+    public List<Product>  getZuulShow(){
+      Map<String,Object> map=new HashMap<String, Object>();
+
+         return productFeigin.getProductList(map);
     }
 
 }
