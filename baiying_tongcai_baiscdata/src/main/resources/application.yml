@@ -1,0 +1,29 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: baiscdata
+  datasource:
+    url: jdbc:mysql://localhost:3306/mysql?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    tomcat:
+      max-active: 20
+    dbcp2:
+      max-idle: 8
+      min-idle: 8
+      initial-size: 10
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+cloud:
+  config:
+    discovery:
+      enabled: true
+      service-id: springcloud-config-server
+    profile: dev
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
