@@ -3,6 +3,15 @@ server:
 spring:
   application:
     name: baiying_tongcai_user
+  redis:
+    host: 127.0.0.1
+    post: 6397
+    password:
+    jedis:
+      pool:
+        max-idle: 10
+        max-wait: 100000
+        timeout: 0
 eureka:
   client:
     service-url:
