@@ -31,8 +31,8 @@ public class RedisServiceImpl implements RedisService {
                 RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
                 connection.set(serializer.serialize(key), serializer.serialize(value));
                 return true;
-            }
-        });
+    }
+});
         return result;
     }
 
