@@ -25,6 +25,7 @@ public class ProductListController {
   @RequestMapping(value = "/getProductList",method = RequestMethod.GET)
   @ResponseBody
    public List<Product> getProductList(Map<String,Object> map){
+      System.out.println("eeee");
     return  productListSerivce.getProductList(map);
    }
 
